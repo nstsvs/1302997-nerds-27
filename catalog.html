@@ -8,7 +8,7 @@
     <header>
       <nav>
         <a href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Nёrds">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Nёrds">
         </a>
         <ul>
           <li><a href="info.html">Студия</a></li>
@@ -48,27 +48,51 @@
       </ul>
     </div>
 
-    <form>
-      <span>Сетка</span>
+    <form method="get" action="#">
+      <label>Сетка</label>
       <ul>
-        <li>Адаптивная</li>
-        <li>Фиксированная</li>
-        <li>Резиновая</li>
+        <li>
+          <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+          <label for="filter-adaptive">Адаптивная</label>
+        </li>
+        <li>
+          <input type="radio" name="grid" value="fixed" id="filter-fixed">
+          <label for="filter-fixed">Фиксированная</label>
+        </li>
+        <li>
+          <input type="radio" name="grid" value="rubber" id="filter-rubber">
+          <label for="filter-rubber">Резиновая</label>
+        </li>
       </ul>
-      <span>Особенности</span>
+      <legend>Особенности</legend>
       <ul>
-        <li>Слайдер</li>
-        <li>Блок преимуществ</li>
-        <li>Новости</li>
-        <li>Галерея</li>
-        <li>Корзина</li>
+        <li>
+          <input type="checkbox" name="slider" id="filter-slider" checked>
+          <label for="filter-slider">Слайдер</label>
+        </li>
+        <li>
+          <input type="checkbox" name="advantages" id="filter-advantages">
+          <label for="filter-advantages">Блок преимуществ</label>
+        </li>
+        <li>
+          <input type="checkbox" name="news" id="filter-news" checked>
+          <label for="filter-news">Новости</label>
+        </li>
+        <li>
+          <input type="checkbox" name="gallery" id="filter-gallery">
+          <label for="filter-gallery">Галерея</label>
+        </li>
+        <li>
+          <input type="checkbox" name="busket" id="filter-busket">
+          <label for="filter-busket">Корзина</label>
+        </li>
       </ul>
-      <button type="button">Показать</button>
+      <button type="submit">Показать</button>
     </form>
 
       <ul>
         <li>
-          <img src="img/sedona.png" width="360" height="576" alt="Sedona">
+          <img src="img/sedona.png" width="360" height="576" alt="шаблон сайта Sedona">
           <div>
             <a href="item.html">Sedona</a>
               <span>Информационный сайт для туристов</span>
@@ -76,7 +100,7 @@
             </div>
           </li>
           <li>
-            <img src="img/pink.png" width="360" height="576" alt="Pink">
+            <img src="img/pink.png" width="360" height="576" alt="шаблон сайта Pink">
             <div>
                 <a href="item.html">Pink</a>
                 <span>Описание шаблона</span>
@@ -84,7 +108,7 @@
             </div>
             </li>
             <li>
-              <img src="img/barbershop.png" width="360" height="576" alt="Borodinski">
+              <img src="img/barbershop.png" width="360" height="576" alt="шаблон сайта Borodinski">
               <div>
                 <a href="catalog-item.html">Borodinski</a>
                 <span>Описание шаблона</span>
@@ -92,7 +116,7 @@
               </div>
             </li>
             <li>
-              <img src="img/mishka.png" width="360" height="576" alt="Mishka">
+              <img src="img/mishka.png" width="360" height="576" alt="шаблон сайта Mishka">
               <div>
                 <a href="catalog-item.html">Mishka</a>
                 <span>Описание шаблона</span>
@@ -100,7 +124,7 @@
               </div>
             </li>
             <li>
-              <img src="img/aplus.png" width="360" height="576" alt="Aplus">
+              <img src="img/aplus.png" width="360" height="576" alt="шаблон сайта Aplus">
               <div>
                 <a href="catalog-item.html">A+</a>
                 <span>Описание шаблона</span>
@@ -108,7 +132,7 @@
               </div>
               </li>
               <li>
-                <img src="img/kvast.png" width="360" height="576" alt="Кваст">
+                <img src="img/kvast.png" width="360" height="576" alt="шаблон сайта Кваст">
                 <div>
                   <a href="catalog-item.html">Кваст</a>
                   <span>Описание шаблона</span>
@@ -138,8 +162,28 @@
                   <p>тел. +7 (812) 275-75-75</p>
                   <a href="#">Напишите нам</a>
                 </div>
-              </div>
             </section>
+
+            <!-- write us form -->
+            <div class="visually-hidden">
+              <h3>Напишите нам</h3>
+              <form action="#" method="post">
+                <p>
+                <label for="name-field">Ваше имя:</label>
+                <input id="name-field" type="text" name="login" placeholder="Имя Фамилия">
+              </p>
+              <p>
+                <label for="email-field">Ваш e-mail:</label>
+                <input id="email-field" type="email" name="email" placeholder="email@example.com">
+              </p>
+              <p>
+                <label for="letter-field">Текст письма:</label>
+                <textarea id="letter-field" name="letter" placeholder="В свободной форме"></textarea>
+                </p>
+                <button type="submit">Отправить</button>
+              </form>
+              <a href="#">Закрыть</a>
+              </div>
 
             <div>
               <ul>
