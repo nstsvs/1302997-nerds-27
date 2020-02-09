@@ -26,16 +26,25 @@
 
     <section>
       <div>
-        <p>Стоимость</p>
-          <span>от</span>
-          <input type="text" value="0" name="min">
-          <span>до</span>
-          <input type="text" value="15000" name="max">
-      </div>
-    </section>
+        <h2>Стоимость</h2>
+        <div class="filter-slider">
+          <div class="slider-range">
+            <div class="slider-scale">
+              <div class="slider-bar"></div>
+            </div>
+            <div class="slider-range-handle min"></div>
+            <div class="slider-range-handle max"></div>
+          </div>
+        </div>
+        <label for="price-min">от</label>
+        <input id="price-min" type="text" name="min" value="0">
+        <label for="price-max">до</label>
+        <input id="price-max" type="text" name="max" value="15000">
+        </div>
+      </section>
 
     <div>
-      <span>Сортировать:</span>
+      <h2>Сортировать:</h2>
       <ul>
         <li><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
@@ -48,7 +57,7 @@
     </div>
 
     <form method="post" action="/">
-      <span>Сетка</span>
+      <h2>Сетка</h2>
       <ul>
         <li>
           <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
@@ -63,7 +72,7 @@
           <label for="filter-rubber">Резиновая</label>
         </li>
       </ul>
-      <span>Особенности</span>
+      <h2>Особенности</h2>
       <ul>
         <li>
           <input type="checkbox" name="slider" id="filter-slider" checked>
