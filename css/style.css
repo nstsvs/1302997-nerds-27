@@ -186,24 +186,6 @@ a {
   opacity: 0.3;
 }
 
-.name,
-.email,
-.massage {
-  font-weight: 700;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.button {
-  font-weight: 500;
-  color: #ffffff;
-  background-color: #fb565a;
-  border: none;
-}
-
 .slogan-title {
   font-size: 36px;
   line-height: 1;
@@ -213,4 +195,8 @@ label {
   font-size: 16px;
   line-height: 1.38;
   color: #444444;
+}
+
+.feedback {
+  display: none;
 }
