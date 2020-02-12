@@ -3,26 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Nёrds">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="info.html">Студия</a></li>
           <li><a href="customers.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul>
+        <ul class="cart">
           <li><a href="cart.html">Корзина</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>Магазин готовых шаблонов</h1>
+      <h1 class="shop-title">Магазин готовых шаблонов</h1>
 
     <section>
       <div>
@@ -57,8 +60,8 @@
     </div>
 
     <form method="post" action="/">
-      <h2>Сетка</h2>
-      <ul>
+      <h2 class="filter-title">Сетка</h2>
+      <ul class="filter-options">
         <li>
           <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
           <label for="filter-adaptive">Адаптивная</label>
@@ -72,8 +75,8 @@
           <label for="filter-rubber">Резиновая</label>
         </li>
       </ul>
-      <h2>Особенности</h2>
-      <ul>
+      <h2 class="filter-title">Особенности</h2>
+      <ul class="filter-options">
         <li>
           <input type="checkbox" name="slider" id="filter-slider" checked>
           <label for="filter-slider">Слайдер</label>
@@ -95,23 +98,23 @@
           <label for="filter-cart">Корзина</label>
         </li>
       </ul>
-      <button type="submit">Показать</button>
+      <button class="btn-show" type="submit">Показать</button>
     </form>
 
-      <ul>
+      <ul class="catalog-list">
         <li>
           <img src="img/sedona.png" width="360" height="576" alt="шаблон сайта Sedona">
           <div>
-            <a href="item.html">Sedona</a>
-              <span>Информационный сайт для туристов</span>
-              <button type="button">9900 руб.</button>
+            <a class="item-title" href="item.html">Sedona</a>
+              <p class="item-description">Информационный сайт для туристов</p>
+              <button class="sedona-button" type="button">9900 руб.</button>
             </div>
           </li>
           <li>
             <img src="img/pink.png" width="360" height="576" alt="шаблон сайта Pink">
             <div>
                 <a href="item.html">Pink</a>
-                <span>Описание шаблона</span>
+                <p>Описание шаблона</p>
                 <button type="button">цена руб.</button>
             </div>
             </li>
@@ -119,7 +122,7 @@
               <img src="img/barbershop.png" width="360" height="576" alt="шаблон сайта Borodinski">
               <div>
                 <a href="catalog-item.html">Borodinski</a>
-                <span>Описание шаблона</span>
+                <p>Описание шаблона</p>
                 <button type="button">цена руб.</button>
               </div>
             </li>
@@ -127,7 +130,7 @@
               <img src="img/mishka.png" width="360" height="576" alt="шаблон сайта Mishka">
               <div>
                 <a href="catalog-item.html">Mishka</a>
-                <span>Описание шаблона</span>
+                <p>Описание шаблона</p>
                 <button type="button">цена руб.</button>
               </div>
             </li>
@@ -135,7 +138,7 @@
               <img src="img/aplus.png" width="360" height="576" alt="шаблон сайта Aplus">
               <div>
                 <a href="catalog-item.html">A+</a>
-                <span>Описание шаблона</span>
+                <p>Описание шаблона</p>
                 <button type="button">цена руб.</button>
               </div>
               </li>
@@ -143,18 +146,18 @@
                 <img src="img/kvast.png" width="360" height="576" alt="шаблон сайта Кваст">
                 <div>
                   <a href="catalog-item.html">Кваст</a>
-                  <span>Описание шаблона</span>
+                  <p>Описание шаблона</p>
                   <button type="button">цена руб.</button>
                 </div>
               </li>
             </ul>
 
               <div>
-                <ul>
+                <ul class="pagination">
                 <li><a>1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
-                <li><a href="#">Следующая</a></li>
+                <li class="btn-next"><a href="#">Следующая</a></li>
               </ul>
               </div>
           </main>
@@ -193,17 +196,17 @@
               </div>
 
             <div>
-              <ul>
+              <ul class="social">
                 <li><a href="#">Вконтакте</a></li>
                 <li><a href="#">Фейсбук</a></li>
                 <li><a href="#">Инстаграм</a></li>
               </ul>
             </div>
             <div>
-              <p>
+              <p class="slogan-title">
                 Давайте дружить, это выгодно!
               </p>
-              <p>
+              <p class="discount">
                 Скидка 10% для друзей из социальных сетей.
               </p>
             </div>
