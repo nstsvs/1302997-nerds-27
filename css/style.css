@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header-logo:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 1.88;
+  font-weight: 500;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.site-navigation a,
+.cart a{
+  color: inherit;
+}
+
+.site-navigation a:hover,
+.cart a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.cart a:active {
+  color: rgba(0, 0, 0, 0.3);
+  opacity: 30%;
+}
+
+.site-navigation,
+.cart,
+.services,
+.social,
+.filter-options,
+.catalog-list,
+.pagination {
+  list-style: none;
+}
+
+.web-button {
+  color: #ffffff;
+  background-color: #fb565a;
+  border: none;
+}
+
+.app-button {
+  color: #ffffff;
+  background-color: #00ca74;
+  border: none;
+}
+
+.presentations-button {
+  color: #ffffff;
+  background-color: #efc84a;
+  border: none;
+}
+
+.web-button:hover {
+  background-color: #e74246;
+}
+
+.web-button:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  opacity: 30;
+}
+
+.app-button:hover {
+  background-color: #00bc6c;
+}
+
+.app-button:active {
+  background-color: #00aa62;
+  color: rgba(255, 255, 255, 0.3);
+  opacity: 30;
+}
+
+.presentations-button:hover {
+  background-color: #eab534;
+}
+
+.presentations-button:active {
+  background-color: #e5a722;
+  color: rgba(255, 255, 255, 0.3);
+  opacity: 30;
+}
+
+.btn-show,
+.btn-next {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.service-title {
+  text-transform: uppercase;
+}
+
+.shop-title {
+  line-height: 1;
+  text-align: center;
+}
+
+.filter-title,
+.item-title {
+ font-size: 18px;
+ line-height: 1.67;
+}
+
+.filter-options {
+  color: #283136;
+}
+
+.item-title {
+  color: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.item-description {
+  color: #666666;
+}
+
+.sedona-button{
+  background-color: #fb565a;
+  color: #ffffff;
+  border: none;
+}
+
+.item-title:hover {
+  color: #fb565a;
+}
+
+.item-title:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sedona-button:hover {
+  background-color: #e74246;
+}
+
+.sedona-button:active {
+  background-color: #d7373b;
+}
+
+.btn-show,
+.btn-next,
+.item-description {
+  line-height: 1.13;
+}
+
+.btn-show {
+  background-color: #eeeeee;
+  border: none;
+}
+
+.btn-show:hover {
+  background-color: #dfdfdf;
+}
+
+.btn-show:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
+}
+
+.name,
+.email,
+.massage {
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.button {
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #fb565a;
+  border: none;
+}
+
+.slogan-title {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.discount {
+  font-size: 16px;
+  line-height: 1.38;
+  color: #444444;
+}
