@@ -33,7 +33,8 @@ a {
 }
 
 .site-navigation a,
-.cart a{
+.cart a {
+  text-transform: uppercase;
   color: inherit;
 }
 
@@ -45,7 +46,6 @@ a {
 .site-navigation a:active,
 .cart a:active {
   color: rgba(0, 0, 0, 0.3);
-  opacity: 30%;
 }
 
 .site-navigation,
@@ -58,52 +58,50 @@ a {
   list-style: none;
 }
 
-.web-button {
+.service-button {
   color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+}
+
+.service-button-web {
   background-color: #fb565a;
-  border: none;
 }
 
-.app-button {
-  color: #ffffff;
+.service-button-app {
   background-color: #00ca74;
-  border: none;
 }
 
-.presentations-button {
-  color: #ffffff;
+.service-button-presentations {
   background-color: #efc84a;
-  border: none;
 }
 
-.web-button:hover {
+.service-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.service-button-web:hover {
   background-color: #e74246;
 }
 
-.web-button:active {
+.service-button-web:active {
   background-color: #d7373b;
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 30;
 }
 
-.app-button:hover {
+.service-button-app:hover {
   background-color: #00bc6c;
 }
 
-.app-button:active {
+.service-button-app:active {
   background-color: #00aa62;
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 30;
 }
 
-.presentations-button:hover {
+.service-button-presentations:hover {
   background-color: #eab534;
 }
 
-.presentations-button:active {
+.service-button-presentations:active {
   background-color: #e5a722;
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 30;
 }
 
 .btn-show,
@@ -123,8 +121,8 @@ a {
 
 .filter-title,
 .item-title {
- font-size: 18px;
- line-height: 1.67;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .filter-options {
@@ -135,14 +133,13 @@ a {
   color: inherit;
   font-size: 18px;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .item-description {
   color: #666666;
 }
 
-.sedona-button{
+.item-button{
   background-color: #fb565a;
   color: #ffffff;
   border: none;
@@ -156,11 +153,11 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sedona-button:hover {
+.item-button:hover {
   background-color: #e74246;
 }
 
-.sedona-button:active {
+.item-button:active {
   background-color: #d7373b;
 }
 
@@ -183,10 +180,10 @@ a {
   background-color: #d5d5d5;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   color: rgba(0, 0, 0, 0.3);
-  opacity: 0.3;
 }
 
 .slogan-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1;
 }
