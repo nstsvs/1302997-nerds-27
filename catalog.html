@@ -9,24 +9,25 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Nёrds">
         </a>
+        <ul class="cart">
+          <li><a href="cart.html">Корзина</a></li>
+        </ul>
+        <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="info.html">Студия</a></li>
           <li><a href="customers.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul class="cart">
-          <li><a href="cart.html">Корзина</a></li>
-        </ul>
       </nav>
     </header>
     <main>
+      <section class="shop">
       <h1 class="shop-title">Магазин готовых шаблонов</h1>
-
+    </section>
     <section>
       <div>
         <h2 class="filter-title">Стоимость</h2>
@@ -39,17 +40,17 @@
             <div class="slider-range-handle max"></div>
           </div>
         </div>
-        <label for="price-min">от</label>
+        <label class="price" for="price-min">от</label>
         <input id="price-min" type="text" name="min" value="0">
-        <label for="price-max">до</label>
+        <label class="price" for="price-max">до</label>
         <input id="price-max" type="text" name="max" value="15000">
         </div>
       </section>
 
-    <div>
-      <h2 class="filter-title">Сортировать:</h2>
-      <ul>
-        <li><a href="#">По цене</a></li>
+    <div class="sort-wrapper">
+      <h2 class="sort-title">Сортировать:</h2>
+      <ul class="sort">
+        <li class="active"><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
         <li><a href="#">По названию</a></li>
       </ul>
@@ -154,7 +155,7 @@
 
               <div>
                 <ul class="pagination">
-                <li><a>1</a></li>
+                <li class="active"><a>1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li class="btn-next"><a href="#">Следующая</a></li>
@@ -163,15 +164,15 @@
           </main>
 
           <footer>
-            <section>
+            <section class="map">
               <div>
               <!-- map -->
               </div>
-                <div>
-                  <p>Nёrds design studio</p>
-                  <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                  <p>тел. +7 (812) 275-75-75</p>
-                  <a href="#">Напишите нам</a>
+                <div class="contacts-wrapper">
+                  <p class="contacts-title">Nёrds design studio</p>
+                  <p class="contacts">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                  <p class="contacts">тел. +7 (812) 275-75-75</p>
+                  <a class="contacts-button" href="#">Напишите нам</a>
                 </div>
             </section>
 
