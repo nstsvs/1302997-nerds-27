@@ -14,19 +14,7 @@ a {
   text-decoration: none;
 }
 
-.site-navigation li {
-  float: left;
-}
-
-ul.site-navigation {
-  font-size: 16px;
-  color: inherit;
-  margin-right: 150px;
-  margin-top: 3px;
-  font-weight: 500;
-}
-
-ul.site-navigation li a {
+.site-navigation a {
   font-weight: 500;
   font-size: 16px;
   padding-right: 48px;
@@ -42,7 +30,7 @@ ul.site-navigation li a {
   padding-top: 49px;
 }
 
-.slider div {
+.slider {
   background-color: #eeeeee;
   position: relative;
   overflow: hidden;
@@ -73,7 +61,6 @@ ul.cart a {
 
 nav,
 .cart {
-  float: right;
   margin-top: 33px;
   font-size: 16px;
 }
@@ -247,7 +234,7 @@ header {
   padding-top: 41px;
 }
 
-.percent tr:last-child {
+.percent td:last-child {
   width: 68px;
 }
 
@@ -261,17 +248,17 @@ header {
  color: inherit;
 }
 
-.table-text tr:first-child {
+.table-text td:first-child {
     width: 89px;
     height: 33px;
 }
 
-.table-text tr::nth-child(2n) {
+.table-text td:nth-last-of-type(2n) {
   width: 95px;
   height: 35px;
 }
 
-.table-text tr:last-child {
+.table-text td:last-child {
   width: 105px;
   height: 34px;
 }
@@ -283,7 +270,7 @@ header {
   color: #283136;
 }
 
-table {
+.table-advantages {
   padding-bottom: 77px;
 }
 
@@ -323,11 +310,8 @@ table {
   text-transform: uppercase;
 }
 
-.shop {
-  background-color: #eeeeee;
-}
-
 .shop-title {
+  background-color: #eeeeee;
   font-weight: 500;
   font-size: 55px;
   height: 196px;
@@ -442,14 +426,14 @@ ul.sort a:active {
 }
 
 .btn-show:hover,
-ul.pagination:hover a,
-li.btn-next:hover a {
+.pagination a:hover,
+.btn-next a:hover {
   background-color: #dfdfdf;
 }
 
 .btn-show:active,
-ul.pagination:active a,
-li.btn-next:active a {
+.pagination a:active,
+.btn-next a:active {
   background-color: #d5d5d5;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   color: rgba(0, 0, 0, 0.3);
@@ -472,12 +456,13 @@ li.btn-next a {
   text-align: center;
 }
 
-li.active2 a {
+li.pagination-active a:first-child {
   font-size: 16px;
   background: #ffffff;
   border: solid 3px #dbdbdb;
   text-align: center;
   color: inherit;
+
 }
 
 .discount {
