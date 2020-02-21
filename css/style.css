@@ -10,14 +10,14 @@ body {
   background-color: #ffffff;
 }
 
-header {
+a {
+  text-decoration: none;
+}
+
+.main-header {
   background-color: #eeeeee;
   text-transform: uppercase;
   padding-top: 49px;
-}
-
-a {
-  text-decoration: none;
 }
 
 .main-header-logo {
