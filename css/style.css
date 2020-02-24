@@ -17,13 +17,11 @@ a {
 .main-header {
   background-color: #eeeeee;
   text-transform: uppercase;
-  padding-top: 49px;
 }
 
 .main-header-logo {
   width: 140px;
   height: 65px;
-  padding-left: 140px;
   padding-top: 49px;
 }
 
@@ -50,7 +48,6 @@ a {
 .main-navigation {
   line-height: 1.88;
   font-weight: 500;
-  text-align: left;
   color: inherit;
 }
 
@@ -276,13 +273,14 @@ a {
   background-color: #eeeeee;
   font-weight: 500;
   font-size: 55px;
-  height: 196px;
-  padding-top: 116px;
+  padding-top: 80px;
+  padding-bottom: 116px;
   text-align: center;
   margin: 0;
 }
 
 .filter-title {
+ text-transform: uppercase;
  font-size: 18px;
  font-weight: 700;
  line-height: 1.67;
@@ -412,6 +410,89 @@ a {
   color: #444444;
 }
 
-.feedback {
+.feedback,
+.item {
   display: none;
+}
+
+/* --- Сеточные стили --- */
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.main-header {
+  display: flex;
+  padding-left: 140px;
+}
+
+.main-navigation {
+  padding-top: 83px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cart {
+  display: inline-flex;
+  text-align: right;
+}
+
+.site-navigation {
+  display: inline-flex;
+  justify-content: space-between;
+  padding-left: 70px;
+}
+
+.services {
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  justify-content: space-between;
+}
+
+.service-item {
+  width: 250px;
+  margin-right: 100px;
+}
+
+.social {
+  display: flex;
+  margin: 0;
+}
+
+.footer-text {
+  margin-left: 365px;
+}
+
+.slogan-title {
+  margin: 0;
+}
+
+.shop-title {
+  display: block;
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  padding-left: 140px;
+  padding-top: 63px;
+  margin: 0;
+  padding-right: 140px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 110px;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  padding-bottom: 33px;
 }
