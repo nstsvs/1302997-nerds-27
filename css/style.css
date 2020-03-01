@@ -22,7 +22,7 @@ a {
 .main-header-logo {
   width: 140px;
   height: 65px;
-  margin-left: 140px;
+  padding-top: 49px;
 }
 
 .main-header-logo:hover {
@@ -65,7 +65,6 @@ a {
   font-weight: 500;
   font-size: inherit;
   color: inherit;
-  padding-left: 48px;
 }
 
 .cart a {
@@ -265,19 +264,21 @@ a {
 
 .service-title {
   text-transform: uppercase;
+  font-size: 24px;
 }
 
 .shop-title {
   background-color: #eeeeee;
   font-weight: 500;
   font-size: 55px;
-  padding-top: 80px;
-  padding-bottom: 116px;
+  padding-top: 85px;
+  padding-bottom: 124px;
   text-align: center;
   margin: 0;
 }
 
 .filter-title {
+margin: 0;
  text-transform: uppercase;
  font-size: 18px;
  font-weight: 700;
@@ -297,6 +298,7 @@ a {
 }
 
 .sort-title {
+  margin: 0;
  width: 133px;
  height: 14px;
  font-size: 18px;
@@ -400,7 +402,6 @@ a {
 .slogan-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1;
 }
 
 .discount {
@@ -420,34 +421,50 @@ a {
   margin: 0 auto;
 }
 
-.main-header {
-  display: flex;
-}
-
 .main-navigation {
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
 }
 
-.cart {
-  display: inline-flex;
-  margin-top: 83px;
+.cart,
+.site-navigation {
+  padding: 0;
+  flex-wrap: wrap;
+  margin-top: 76px;
 }
 
 .site-navigation {
-  display: inline-flex;
-  margin-top: 83px;
+  display: flex;
+  margin-left: 220px;
+}
+
+.site-item {
+  margin-right: 47px;
+}
+
+.site-navigation li:last-child {
+  margin: 0;
 }
 
 .services {
   display: flex;
+  padding-left: 0;
   padding-top: 80px;
   padding-bottom: 80px;
   justify-content: space-between;
 }
 
 .service-item {
+  width: 300px;
+  margin-right: 40px;
+}
+
+.services li:last-child {
+  margin-right: 0;
+}
+
+.service-item p {
   width: 250px;
-  margin-right: 100px;
 }
 
 .social {
@@ -457,12 +474,6 @@ a {
 
 .slogan-title {
   margin: 0;
-  display: flex;
-}
-
-.shop-title {
-  display: block;
-  text-align: center;
 }
 
 .filters {
@@ -470,24 +481,36 @@ a {
 }
 
 .filter-col {
+  margin-top: 55px;
   width: 261px;
-  margin-left: 139px;
-  margin-right: 140px;
+}
+
+.sort-col {
+  margin-top: 58px;
 }
 
 .catalog-list {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
+  width: 900px;
+  justify-content: flex-end;
 }
 
 .catalog-item {
   display: flex;
-  flex-direction: column;
   padding-bottom: 33px;
   margin-left: 40px;
 }
 
+.catalog-item:nth-child(odd) {
+  margin: 0;
+  padding: 0;
+}
+
 .footer-wrapper {
+  justify-content: space-between;
   display: flex;
 }
 
@@ -496,5 +519,5 @@ a {
 }
 
 .footer-right-column {
-  width: 800px;
+  width: 760px;
 }
