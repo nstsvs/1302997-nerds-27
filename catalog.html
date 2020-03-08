@@ -34,17 +34,31 @@
                 <h3 class="filter-title">Стоимость:</h3>
                 <div class="filter-slider">
                   <div class="slider-range">
-                    <div class="slider-scale">
-                      <div class="slider-bar"></div>
-                    </div>
-                    <div class="slider-range-handle min"></div>
-                    <div class="slider-range-handle max"></div>
-                  </div>
-                  <label class="price" for="price-min">от</label>
-                  <input id="price-min" type="text" name="min" value="0">
-                  <label class="price" for="price-max">до</label>
-                  <input id="price-max" type="text" name="max" value="15000">
-                </div>
+                    <div class="slider-bar">
+                      <svg height="30" width="220" viewBox="0 0 217 12">
+                        <line stroke-width="2" x1="10" y1="10" x2="222" y2="10" stroke="#D7DCDE" id="price-line"></line>
+                        <line stroke-width="2" x1="10" y1="10" x2="140" y2="10" stroke="#00CA74" id="price-line-selected"></line>
+                        <symbol viewBox="0 0 20 22" id="price-handle">
+                          <circle cx="10" cy="12" r="10" fill="rgba(171, 171, 171, 0.3)"></circle>
+                          <circle cx="10" cy="10" r="10" fill="white"></circle>
+                          <circle cx="10" cy="10" r="2" fill="#ABABAB"></circle>
+                  </symbol>
+                  <g class="price-handle" role="button" aria-labelledby="price-min-title" tabindex="0">
+                    <title id="price-min-title"></title>
+                    <use xlink:href="#price-handle" x="0" y="0" width="20" height="22" id="price-min-handle"></use>
+                  </g>
+                  <g class="price-handle" role="button" aria-labelledby="price-max-title" tabindex="0">
+                    <title id="price-max-title"></title>
+                    <use xlink:href="#price-handle" x="139" y="0" width="20" height="22" id="price-max-handle"></use>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <label class="price" for="price-min">от</label>
+            <input id="price-min" type="text" name="min" value="0">
+            <label class="price" for="price-max">до</label>
+            <input id="price-max" type="text" name="max" value="15000">
+          </div>
 
               <h3 class="filter-title">Сетка:</h3>
               <ul class="filter-options">
@@ -93,11 +107,11 @@
     <div class="sort-wrapper">
       <h2 class="sort-title">Сортировать:</h2>
       <ul class="sort">
-        <li class="active"><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По названию</a></li>
+        <li class="active sort-item"><a href="#">По цене</a></li>
+        <li class="sort-item"><a href="#">По типу</a></li>
+        <li class="sort-item"><a href="#">По названию</a></li>
       </ul>
-      <ul>
+      <ul class="sort-icons">
         <li><a href="#">По возрастанию</a></li>
         <li><a href="#">По убыванию</a></li>
       </ul>
@@ -154,9 +168,9 @@
       </li>
     </ul>
     <ul class="pagination">
-      <li class="pagination-active"><a>1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
+      <li class="pagination-active pagination-list"><a>1</a></li>
+      <li class="pagination-list"><a href="#">2</a></li>
+      <li class="pagination-list"><a href="#">3</a></li>
       <li class="btn-next"><a href="#">Следующая</a></li>
     </ul>
   </div>
@@ -164,7 +178,7 @@
 </div>
 </main>
 <footer>
-  <section>
+  <section class="contacts-container">
     <div class="map">
       <!-- map -->
     </div>
