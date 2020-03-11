@@ -647,11 +647,12 @@ margin: 0;
 
 .contacts-wrapper {
   background-color: #ffffff;
-  margin-left: 95px;
+  margin-left: -580px;
   width: 319px;
   height: 309px;
   position: absolute;
   top: 54px;
+  left: 50%;
 }
 
 .contacts-title {
