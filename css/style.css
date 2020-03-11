@@ -496,6 +496,10 @@ margin: 0;
   width: 400px;
 }
 
+.btn-show {
+  margin-top: 109px;
+}
+
 .sort-col {
   margin-top: 58px;
   width: 760px;
@@ -541,17 +545,16 @@ margin: 0;
 }
 
 .slide {
-  height: 215px;
+  display: none;
+  height: 435px;
 }
 
-.first,
+.slide-active {
+  display: block;
+}
+
 .second {
   padding-top: 218px;
-}
-
-.second,
-.third {
- visibility: hidden;
 }
 
 .third {
@@ -560,7 +563,7 @@ margin: 0;
 
 .slide-title {
   margin: 0;
-  margin-top: -147px;
+  padding-top: 71px;
   margin-bottom: 27px;
 }
 
@@ -618,8 +621,8 @@ margin: 0;
 }
 
 .percent sup{
-  top: -0.49em;
-  font-size: 0.6em;
+ top: -15.49px;
+ font-size: 26.6px;
 }
 
 .references {
@@ -639,6 +642,7 @@ margin: 0;
 
 .contacts-container {
   height: 416px;
+  position: relative;
 }
 
 .contacts-wrapper {
@@ -646,13 +650,14 @@ margin: 0;
   margin-left: 95px;
   width: 319px;
   height: 309px;
-  transform: translateY(-123%);
+  position: absolute;
+  top: 54px;
 }
 
 .contacts-title {
-  padding-left: 50px;
+  padding-left: 49px;
   padding-bottom: 5px;
-  padding-top: 49px;
+  padding-top: 31px;
 }
 
 .contacts {
@@ -680,37 +685,8 @@ margin: 0;
   margin-bottom: 57px;
 }
 
-.pagination-list {
+.pagination-item {
   margin-right: 12px;
-}
-
-.slider-range {
-  width: 260px;
-  margin-top: 49px;
-}
-
-.slider-bar {
- padding-top: 20px;
- padding-right: 19px;
- padding-bottom: 22px;
- padding-left: 19px;
- margin-bottom: 19px;
- background-color: #eeeeee;
- border-radius: 5px;
-}
-
-.price {
-  text-transform: uppercase;
-}
-
-#price-min,
-#price-max {
-  margin-right: 33px;
-  width: 80px;
-}
-
-.bnt-show {
-  margin-top: 109px;
 }
 
 .sort-wrapper {
@@ -730,4 +706,62 @@ margin: 0;
 
 .sort-icons {
   display: flex;
+}
+
+.slider-range {
+  position: relative;
+  width: 220px;
+  height: 80px;
+  margin-top: 49px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.slider-range::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slider-scale {
+  height: 2px;
+  background: #d7dcde;
+  margin-left: 10px;
+  margin-top: 39px;
+}
+
+.slider-bar {
+  height: 2px;
+  width: 135px;
+  background: #00ca74;
+}
+
+.toggle {
+  width: 4px;
+  height: 4px;
+  border: 8px solid #ffffff;
+  background: #ababab;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 0 rgba(0, 1, 1, 0.14);
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.max-toggle {
+  left: 160px;
+}
+
+.price {
+  text-transform: uppercase;
+}
+
+.price-min,
+.price-max {
+  margin-right: 33px;
+  width: 80px;
 }
