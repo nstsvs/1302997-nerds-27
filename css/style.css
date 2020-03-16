@@ -231,12 +231,12 @@ a {
 
 .percent {
   height: 75px;
- width: 93px;
- font-size: 45px;
- font-weight: 700;
- line-height: 0.22;
- text-align: left;
- color: inherit;
+  width: 93px;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 0.22;
+  text-align: left;
+  color: inherit;
 }
 
 .table-text td:first-child {
@@ -290,10 +290,10 @@ a {
 }
 
 .service-title {
-    margin-top: 21px;
-    text-transform: uppercase;
-    font-size: 24px;
-    margin-bottom: 19px;
+  margin-top: 21px;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 19px;
 }
 
 .shop-title {
@@ -307,7 +307,7 @@ a {
 }
 
 .filter-title {
-margin: 0;
+ margin: 0;
  text-transform: uppercase;
  font-size: 18px;
  font-weight: 700;
@@ -327,7 +327,7 @@ margin: 0;
 }
 
 .sort-title {
-  margin: 0;
+ margin: 0;
  width: 133px;
  height: 14px;
  font-size: 18px;
@@ -339,33 +339,33 @@ margin: 0;
 }
 
 .sort a {
-  font-size: 13px;
-  line-height: 1.29;
-  color: rgba(0, 0, 0, 0.3);
-  text-transform: uppercase;
+ font-size: 13px;
+ line-height: 1.29;
+ color: rgba(0, 0, 0, 0.3);
+ text-transform: uppercase;
 }
 
 .sort .active a {
-  color: inherit;
+ color: inherit;
 }
 
 .sort a:hover {
-  color: rgba(0, 0, 0, 0.6);
+ color: rgba(0, 0, 0, 0.6);
 }
 
 .sort a:active {
-  color: inherit;
+ color: inherit;
 }
 
 .filter-options {
-  color: #283136;
+ color: #283136;
 }
 
 .item-title {
-  text-transform: uppercase;
-  color: inherit;
-  font-size: 18px;
-  font-weight: 700;
+ text-transform: uppercase;
+ color: inherit;
+ font-size: 18px;
+ font-weight: 700;
 }
 
 .item-description {
@@ -498,31 +498,24 @@ margin: 0;
   width: 250px;
 }
 
-.service-button-web {
+.service-button {
+  padding-top: 16px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  border-radius: 3px;
   padding-right: 41px;
-    background-color: #fb565a;
-    padding-top: 16px;
-    padding-bottom: 15px;
-    padding-left: 40px;
-    border-radius: 3px;
+}
+
+.service-button-web {
+  background-color: #fb565a;
 }
 
 .service-button-app {
-  padding-right: 41px;
-    background-color: #00ca74;
-    padding-top: 16px;
-    padding-bottom: 15px;
-    padding-left: 40px;
-    border-radius: 3px;
+  background-color: #00ca74;
 }
 
 .service-button-presentations {
-  padding-right: 41px;
-    background-color: #efc84a;
-    padding-top: 16px;
-    padding-bottom: 15px;
-    padding-left: 40px;
-    border-radius: 3px;
+  background-color: #efc84a;
 }
 
 .social {
@@ -589,10 +582,6 @@ margin: 0;
 
 .footer-right-column {
   width: 760px;
-}
-
-.cart {
-  margin-top: 26px;
 }
 
 .slider-section {
@@ -852,11 +841,12 @@ margin: 0;
 }
 
 .cart {
+  margin-top: 26px;
   position: relative;
   padding-left: 0;
 }
 
-.user-active {
+.site-link-active {
   padding-bottom: 9px;
   border-bottom: 2px solid #fb565a;
 }
@@ -913,7 +903,7 @@ margin: 0;
   margin-bottom: 48px;
 }
 
-.input-wrapper:last-of-type textarea {
+.feedback-form textarea {
   resize: none;
   width: 760px;
   height: 118px;
@@ -949,7 +939,7 @@ margin: 0;
   color: #444444;
 }
 
-.feedback-text {
+.feedback-label {
   font-weight: 700;
   line-height: 1.13;
   margin-bottom: 47px;
@@ -977,7 +967,7 @@ margin: 0;
   opacity: 0.3;
   position: absolute;
   top: 87px;
-  left: 47%;
+  right: 9%;
   margin-left: 390px;
   outline: 0;
 }
@@ -1011,11 +1001,17 @@ margin: 0;
   margin-bottom: 17px;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden {
   position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .radio::before {
@@ -1029,7 +1025,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 }
 
-input:checked ~ .radio::before {
+.input-radio:checked ~ .radio::before {
   content: "";
   position: absolute;
   left: -42px;
@@ -1055,7 +1051,7 @@ input:checked ~ .radio::before {
   opacity: 0.4;
 }
 
-input:checked ~ .checkbox::before {
+.input-checkbox:checked ~ .checkbox::before {
   position: absolute;
   background: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
@@ -1077,6 +1073,10 @@ input:checked ~ .checkbox::before {
 
 .catalog-item {
   position: relative;
+}
+
+.catalog-item:hover .item {
+  display: block;
 }
 
 .catalog-item::before {
