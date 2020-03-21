@@ -805,6 +805,7 @@ a {
 
 .icon {
   width: 11px;
+  height: 10px;
   display: block;
 }
 
@@ -824,7 +825,7 @@ a {
   position: absolute;
   width: 11px;
   height: 10px;
-  top: -4px;
+  top: 6px;
 }
 
 .icon-up a:hover::before {
