@@ -787,45 +787,51 @@ a {
 }
 
 .sort-icons {
-  position: relative;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  display: flex;
-  cursor: pointer;
+}
+
+.icon-down {
+  position: relative;
+  margin-left: 25px;
 }
 
 .icon-up {
   position: relative;
+  margin-left: 54px;
 }
 
-.icon-up::before {
+.icon {
+  width: 11px;
+  display: block;
+}
+
+.icon-up a::before {
   content: "";
   background: url("../img/icons/icon-up-dir.svg");
   position: absolute;
   width: 11px;
   height: 10px;
   opacity: 0.2;
-  right: -65px;
   top: -4px;
 }
 
-.icon-down::before {
+.icon-down a::before {
   content: "";
   background: url("../img/icons/icon-down-dir.svg");
   position: absolute;
   width: 11px;
   height: 10px;
-  right: -36px;
   top: -4px;
 }
 
-.icon-up:hover::before {
+.icon-up a:hover::before {
   opacity: 0.4
 }
 
-.icon-up:active::before {
+.icon-up a:active::before {
   opacity: 100%;
 }
 
@@ -1200,7 +1206,7 @@ a {
   margin-right: 17px;
 }
 
-.slider-toggle-item button {
+.slider-toggle {
   position: absolute;
   width: 18px;
   height: 18px;
