@@ -1211,7 +1211,7 @@ a {
 }
 
 .catalog-item:hover {
-  box-shadow: 0 5px 15px 0 rgba(0, 0.5, 0.5, 0.3);
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.3);
 }
 
 .catalog-item:hover::before{
@@ -1235,9 +1235,7 @@ a {
 }
 
 .slider-toggle-list {
-  position: absolute;
-  left: 535px;
-  bottom: 96px;
+  position: relative;
 
   display: flex;
   margin: 0;
@@ -1246,17 +1244,22 @@ a {
 }
 
 .slider-toggle-item {
-  position: relative;
+  width: 18px;
+  height: 18px;
+  padding: 0;
   margin-right: 17px;
 }
 
-.slider-toggle {
-  position: absolute;
-  top: -18px;
-  left: 97px;
+.slider-toggle-item:last-child {
+  margin-right: 0;
+}
 
+.slider-toggle {
+  position: relative;
   width: 18px;
   height: 18px;
+  left: 630px;
+  bottom: 131px;
 
   background-color: #ffffff;
   border-radius: 50%;
@@ -1270,17 +1273,13 @@ a {
   left: 0px;
   top: 0px;
 
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
 
   content: "";
   background-image: url("../img/active-button.svg");
   background-repeat: no-repeat;
   opacity: 0.3;
-}
-
-.slider-toggle-item:not(:first-child) {
-  margin-left: 17px;
 }
 
 .list-item {
