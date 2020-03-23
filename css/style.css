@@ -135,17 +135,17 @@ a {
 }
 
 .slide.first {
-  background: url(../img/slide1.png) no-repeat;
+  background: url("../img/slide1.png") no-repeat;
   background-position: 93%;
 }
 
 .slide.second {
-  background: url(../img/slide2.png) no-repeat;
+  background: url("../img/slide2.png") no-repeat;
   background-position: 93%;
 }
 
 .slide.third {
-  background: url(../img/slide3.png) no-repeat;
+  background: url("../img/slide3.png") no-repeat;
   background-position: 93%;
 }
 
@@ -296,7 +296,8 @@ a {
 }
 
 .list {
-  padding-left: 0;
+  position: relative;
+  padding-left: 36px;
   text-align: left;
   color: #283136;
 }
@@ -589,6 +590,8 @@ a {
 
 .catalog-item {
   position: relative;
+  width: 360px;
+  height: 576px;
   display: flex;
   margin-bottom: 73px;
   margin-left: 41px;
@@ -1220,13 +1223,12 @@ a {
 
 .item {
   position: absolute;
-  top: 345px;
-  left: 161%;
+  left: 0;
+  bottom: 0;
 
   width: 100%;
-  height: 231px;
-  margin-left: -580px;
   padding-top: 30px;
+  padding-bottom: 42px;
 
   text-align: center;
   background-color: #eeeeee;
@@ -1235,8 +1237,10 @@ a {
 }
 
 .slider-toggle-list {
-  position: relative;
+  position: absolute;
 
+  left: 630px;
+  bottom: 90px;
   display: flex;
   margin: 0;
   padding: 0;
@@ -1244,8 +1248,6 @@ a {
 }
 
 .slider-toggle-item {
-  width: 18px;
-  height: 18px;
   padding: 0;
   margin-right: 17px;
 }
@@ -1256,10 +1258,9 @@ a {
 
 .slider-toggle {
   position: relative;
+
   width: 18px;
   height: 18px;
-  left: 630px;
-  bottom: 131px;
 
   background-color: #ffffff;
   border-radius: 50%;
@@ -1283,15 +1284,19 @@ a {
 }
 
 .list-item {
+  position: relative;
   display: flex;
   margin-bottom: 24px;
   align-items: center;
 }
 
 .list-item::before {
+  position: absolute;
+  top: 11px;
+  left: -36px;
+
   width: 25px;
   height: 2px;
-  margin-right: 10px;
 
   content: "";
   background-color: #fb565a;
