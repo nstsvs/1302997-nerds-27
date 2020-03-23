@@ -34,7 +34,7 @@ a {
   opacity: 0.8;
 }
 
-.main-header-logo:active {
+.main-header-logo img:active {
   opacity: 0.3;
 }
 
