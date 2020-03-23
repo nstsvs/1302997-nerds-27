@@ -1238,11 +1238,12 @@ a {
 
 .slider-toggle-list {
   position: absolute;
-
-  left: 630px;
+  left: 50%;
   bottom: 90px;
+
   display: flex;
   margin: 0;
+  margin-left: -45px;
   padding: 0;
   list-style: none;
 }
