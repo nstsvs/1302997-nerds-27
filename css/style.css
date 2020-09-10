@@ -359,6 +359,16 @@ a {
   background: url("../img/mapmarker.png") no-repeat 48%;
 }
 
+.map::before {
+  content: "";
+  position: absolute;
+  background: url(../img/map-marker.png) no-repeat;
+  top: 64px;
+  left: 61.2%;
+  width: 240px;
+  height: 191px;
+}
+
 .contacts-title {
   width: 193px;
   padding-bottom: 32px;
@@ -602,6 +612,7 @@ a {
 }
 
 .footer-wrapper {
+  margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -991,6 +1002,10 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.modal__show {
+  display: flex;
 }
 
 .input-wrapper {
